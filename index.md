@@ -17,8 +17,10 @@ Bình thường: Mình phải đọc từng trang báo, tự lọc thông tin, c
 Bây giờ: Dùng 5 AI Agents quét và tổng hợp dữ liệu song song:
 
 - Chính sách Mỹ (Trump) → us-policy-agent ✓
-- Động thái Iran → iran-intel-agent ✓
-- Biến động giá dầu → oil-market-analyst ✓
+- Động thái quân sự Iran → iran-intel-agent ✓
+- Biến động giá dầu thô → oil-market-analyst ✓
+- Tác động kinh tế toàn cầu → geoeconomic-agent ✓
+- Đối chiếu lịch sử & Chuyên gia → historical-analyst ✓
 
 Tất cả dữ kiện được gom lại thành 1 file Markdown thô, đầy đủ số liệu mới nhất.
 
@@ -38,7 +40,7 @@ Bây giờ: Kích hoạt `Academic Writer` agent để tự động rập khuôn
 Bình thường: Copy đoạn chat từ AI dán sang Word, sửa lại từng thẻ heading, chỉnh font, in đậm... (rất mất thời gian).
 Bây giờ: Dùng Pandoc CLI - tự động bung file Markdown sang Word (.docx) mượt mà giữ nguyên cấu trúc:
 
-```
+```bash
 pandoc report.md -o report.docx
 ```
 
